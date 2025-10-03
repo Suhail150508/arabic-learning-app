@@ -1,0 +1,103 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradients and patterns -->
+  <defs>
+    <!-- Book cover gradient -->
+    <linearGradient id="coverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="1"/>
+    </linearGradient>
+    
+    <!-- Gold decoration gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f9d776" stop-opacity="1"/>
+    </linearGradient>
+    
+    <!-- Page gradient -->
+    <linearGradient id="pageGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#e2e8f0" stop-opacity="1"/>
+    </linearGradient>
+    
+    <!-- Pattern for book cover -->
+    <pattern id="islamicPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M0,0 L20,20 L0,40 L-20,20 Z" fill="none" stroke="url(#goldGradient)" stroke-width="0.5" transform="translate(20,0)" />
+      <path d="M20,0 L40,20 L20,40 L0,20 Z" fill="none" stroke="url(#goldGradient)" stroke-width="0.5" transform="translate(20,0)" />
+    </pattern>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" />
+  
+  <!-- Quran book -->
+  <g transform="translate(200, 200) rotate(-10)">
+    <!-- Book pages (side view) -->
+    <path d="M-90,-120 L90,-120 L90,120 L-90,120 Z" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" />
+    
+    <!-- Book cover (closed) -->
+    <path d="M-100,-130 L80,-130 L80,110 L-100,110 Z" fill="url(#coverGradient)" stroke="#1e3a8a" stroke-width="2" />
+    
+    <!-- Islamic pattern on cover -->
+    <path d="M-90,-120 L70,-120 L70,100 L-90,100 Z" fill="url(#islamicPattern)" opacity="0.2" />
+    
+    <!-- Gold frame on cover -->
+    <path d="M-85,-115 L65,-115 L65,95 L-85,95 Z" fill="none" stroke="url(#goldGradient)" stroke-width="3" />
+    
+    <!-- Central medallion -->
+    <circle cx="-10" cy="-10" r="40" fill="none" stroke="url(#goldGradient)" stroke-width="3" />
+    <path d="M-10,-40 L10,-20 L-10,0 L-30,-20 Z" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M-10,0 L10,-20 L30,-20 L10,0 Z" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M-10,0 L10,20 L-10,40 L-30,20 Z" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M-10,0 L-30,20 L-30,-20 L-10,-40 Z" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
+    
+    <!-- Book spine -->
+    <path d="M-100,-130 L-120,-120 L-120,120 L-100,110 Z" fill="#1e3a8a" stroke="#1e3a8a" stroke-width="1" />
+    
+    <!-- Gold decoration on spine -->
+    <line x1="-110" y1="-120" x2="-110" y2="110" stroke="url(#goldGradient)" stroke-width="2" />
+    <circle cx="-110" cy="-90" r="5" fill="url(#goldGradient)" />
+    <circle cx="-110" cy="-30" r="5" fill="url(#goldGradient)" />
+    <circle cx="-110" cy="30" r="5" fill="url(#goldGradient)" />
+    <circle cx="-110" cy="90" r="5" fill="url(#goldGradient)" />
+  </g>
+  
+  <!-- Open page with Arabic calligraphy -->
+  <g transform="translate(240, 200) rotate(10)">
+    <!-- Open page -->
+    <path d="M-60,-100 L60,-100 L60,100 L-60,100 Z" fill="url(#pageGradient)" stroke="#cbd5e1" stroke-width="1" />
+    
+    <!-- Arabic text lines (stylized) -->
+    <line x1="-40" y1="-70" x2="40" y2="-70" stroke="#1e3a8a" stroke-width="2" opacity="0.7" />
+    <line x1="-40" y1="-50" x2="40" y2="-50" stroke="#1e3a8a" stroke-width="2" opacity="0.7" />
+    <line x1="-40" y1="-30" x2="40" y2="-30" stroke="#1e3a8a" stroke-width="2" opacity="0.7" />
+    <line x1="-40" y1="-10" x2="20" y2="-10" stroke="#1e3a8a" stroke-width="2" opacity="0.7" />
+    
+    <line x1="-40" y1="20" x2="40" y2="20" stroke="#1e3a8a" stroke-width="2" opacity="0.7" />
+    <line x1="-40" y1="40" x2="40" y2="40" stroke="#1e3a8a" stroke-width="2" opacity="0.7" />
+    <line x1="-40" y1="60" x2="40" y2="60" stroke="#1e3a8a" stroke-width="2" opacity="0.7" />
+    <line x1="-40" y1="80" x2="20" y2="80" stroke="#1e3a8a" stroke-width="2" opacity="0.7" />
+    
+    <!-- Decorative verse marker -->
+    <circle cx="-20" cy="0" r="10" fill="url(#goldGradient)" opacity="0.8" />
+  </g>
+  
+  <!-- Prayer beads -->
+  <g transform="translate(100, 300)">
+    <!-- Beads string -->
+    <path d="M0,0 C20,-20 40,-30 60,-20 C80,-10 100,10 120,0" fill="none" stroke="#d4af37" stroke-width="1" />
+    
+    <!-- Individual beads -->
+    <circle cx="0" cy="0" r="8" fill="url(#goldGradient)" />
+    <circle cx="20" cy="-10" r="8" fill="url(#goldGradient)" />
+    <circle cx="40" cy="-18" r="8" fill="url(#goldGradient)" />
+    <circle cx="60" cy="-20" r="8" fill="url(#goldGradient)" />
+    <circle cx="80" cy="-15" r="8" fill="url(#goldGradient)" />
+    <circle cx="100" cy="-5" r="8" fill="url(#goldGradient)" />
+    <circle cx="120" cy="0" r="8" fill="url(#goldGradient)" />
+  </g>
+  
+  <!-- Light effect -->
+  <circle cx="120" cy="120" r="30" fill="#ffffff" opacity="0.1" />
+  <circle cx="120" cy="120" r="20" fill="#ffffff" opacity="0.2" />
+  <circle cx="120" cy="120" r="10" fill="#ffffff" opacity="0.3" />
+</svg>

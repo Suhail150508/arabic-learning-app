@@ -1,0 +1,137 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for gradients and patterns -->
+  <defs>
+    <linearGradient id="primary-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d3557" />
+      <stop offset="100%" stop-color="#457b9d" />
+    </linearGradient>
+    
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#f1c40f" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Arabic letter definitions -->
+    <!-- Alif -->
+    <g id="letter-alif">
+      <path d="M10,10 L10,90 C10,95 5,95 5,90 L5,10" fill="url(#primary-gradient)" />
+    </g>
+    
+    <!-- Ba -->
+    <g id="letter-ba">
+      <path d="M5,50 C15,50 35,50 45,40 C50,35 50,30 45,30 C35,30 5,45 5,50 Z" fill="url(#primary-gradient)" />
+      <circle cx="10" cy="45" r="3" fill="#fff" />
+    </g>
+    
+    <!-- Ta -->
+    <g id="letter-ta">
+      <path d="M5,50 C15,50 35,50 45,40 C50,35 50,30 45,30 C35,30 5,45 5,50 Z" fill="url(#primary-gradient)" />
+      <path d="M20,30 L30,20 M20,20 L30,30" stroke="#fff" stroke-width="2" />
+    </g>
+    
+    <!-- Tha -->
+    <g id="letter-tha">
+      <path d="M5,50 C15,50 35,50 45,40 C50,35 50,30 45,30 C35,30 5,45 5,50 Z" fill="url(#primary-gradient)" />
+      <path d="M20,25 L30,15 M25,15 L25,25" stroke="#fff" stroke-width="2" />
+    </g>
+    
+    <!-- Jim -->
+    <g id="letter-jim">
+      <path d="M5,40 C15,40 30,40 40,30 C45,25 45,20 40,20 C30,20 10,30 10,35 C10,45 5,55 15,55 C25,55 35,45 45,45" fill="url(#primary-gradient)" />
+      <circle cx="10" cy="45" r="3" fill="#fff" />
+    </g>
+    
+    <!-- Ha -->
+    <g id="letter-ha">
+      <path d="M5,40 C15,40 30,40 40,30 C45,25 45,20 40,20 C30,20 10,30 10,35 C10,45 5,55 15,55 C25,55 35,45 45,45" fill="url(#primary-gradient)" />
+    </g>
+    
+    <!-- Kha -->
+    <g id="letter-kha">
+      <path d="M5,40 C15,40 30,40 40,30 C45,25 45,20 40,20 C30,20 10,30 10,35 C10,45 5,55 15,55 C25,55 35,45 45,45" fill="url(#primary-gradient)" />
+      <circle cx="25" cy="15" r="3" fill="#fff" />
+    </g>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="'Scheherazade New', serif" font-size="40" text-anchor="middle" fill="url(#primary-gradient)">الحروف العربية</text>
+  <text x="400" y="100" font-family="'Poppins', sans-serif" font-size="24" text-anchor="middle" fill="#457b9d">The Arabic Alphabet</text>
+  
+  <!-- Decorative elements -->
+  <g opacity="0.1">
+    <path d="M0,0 L800,600 M800,0 L0,600" stroke="url(#gold-gradient)" stroke-width="1" />
+    <circle cx="400" cy="300" r="250" fill="none" stroke="url(#gold-gradient)" stroke-width="2" />
+    <circle cx="400" cy="300" r="200" fill="none" stroke="url(#gold-gradient)" stroke-width="1" />
+  </g>
+  
+  <!-- Letter grid -->
+  <g transform="translate(100, 150)" filter="url(#glow)">
+    <!-- Row 1 -->
+    <g transform="translate(0, 0)">
+      <use href="#letter-alif" transform="scale(0.6)" />
+      <text x="30" y="30" font-family="'Scheherazade New', serif" font-size="24" fill="url(#primary-gradient)">ا</text>
+      <text x="30" y="55" font-family="'Poppins', sans-serif" font-size="12" fill="#457b9d">Alif</text>
+    </g>
+    
+    <g transform="translate(100, 0)">
+      <use href="#letter-ba" transform="scale(0.6)" />
+      <text x="30" y="30" font-family="'Scheherazade New', serif" font-size="24" fill="url(#primary-gradient)">ب</text>
+      <text x="30" y="55" font-family="'Poppins', sans-serif" font-size="12" fill="#457b9d">Ba</text>
+    </g>
+    
+    <g transform="translate(200, 0)">
+      <use href="#letter-ta" transform="scale(0.6)" />
+      <text x="30" y="30" font-family="'Scheherazade New', serif" font-size="24" fill="url(#primary-gradient)">ت</text>
+      <text x="30" y="55" font-family="'Poppins', sans-serif" font-size="12" fill="#457b9d">Ta</text>
+    </g>
+    
+    <g transform="translate(300, 0)">
+      <use href="#letter-tha" transform="scale(0.6)" />
+      <text x="30" y="30" font-family="'Scheherazade New', serif" font-size="24" fill="url(#primary-gradient)">ث</text>
+      <text x="30" y="55" font-family="'Poppins', sans-serif" font-size="12" fill="#457b9d">Tha</text>
+    </g>
+    
+    <g transform="translate(400, 0)">
+      <use href="#letter-jim" transform="scale(0.6)" />
+      <text x="30" y="30" font-family="'Scheherazade New', serif" font-size="24" fill="url(#primary-gradient)">ج</text>
+      <text x="30" y="55" font-family="'Poppins', sans-serif" font-size="12" fill="#457b9d">Jim</text>
+    </g>
+    
+    <g transform="translate(500, 0)">
+      <use href="#letter-ha" transform="scale(0.6)" />
+      <text x="30" y="30" font-family="'Scheherazade New', serif" font-size="24" fill="url(#primary-gradient)">ح</text>
+      <text x="30" y="55" font-family="'Poppins', sans-serif" font-size="12" fill="#457b9d">Ha</text>
+    </g>
+    
+    <!-- Row 2 -->
+    <g transform="translate(0, 100)">
+      <use href="#letter-kha" transform="scale(0.6)" />
+      <text x="30" y="30" font-family="'Scheherazade New', serif" font-size="24" fill="url(#primary-gradient)">خ</text>
+      <text x="30" y="55" font-family="'Poppins', sans-serif" font-size="12" fill="#457b9d">Kha</text>
+    </g>
+    
+    <!-- Add more letters as needed -->
+  </g>
+  
+  <!-- Decorative border -->
+  <rect x="10" y="10" width="780" height="580" rx="20" ry="20" fill="none" stroke="url(#gold-gradient)" stroke-width="2" opacity="0.3" />
+  
+  <!-- Corner decorations -->
+  <g opacity="0.3">
+    <path d="M30,30 L80,30 L80,80" fill="none" stroke="url(#gold-gradient)" stroke-width="2" />
+    <path d="M770,30 L720,30 L720,80" fill="none" stroke="url(#gold-gradient)" stroke-width="2" />
+    <path d="M30,570 L80,570 L80,520" fill="none" stroke="url(#gold-gradient)" stroke-width="2" />
+    <path d="M770,570 L720,570 L720,520" fill="none" stroke="url(#gold-gradient)" stroke-width="2" />
+  </g>
+</svg>

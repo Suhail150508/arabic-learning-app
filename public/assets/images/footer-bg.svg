@@ -1,0 +1,129 @@
+<svg width="1920" height="600" viewBox="0 0 1920 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradients -->
+  <defs>
+    <!-- Dark background gradient -->
+    <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a202c" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#2d3748" stop-opacity="1"/>
+    </linearGradient>
+    
+    <!-- Gold accent gradient -->
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f9d776" stop-opacity="0.4"/>
+    </linearGradient>
+    
+    <!-- Pattern gradient -->
+    <linearGradient id="patternGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="1920" height="600" fill="url(#footerGradient)"/>
+  
+  <!-- Decorative wave patterns -->
+  <path d="M0,100 C400,50 800,150 1200,100 C1600,50 1920,150 1920,100 L1920,0 L0,0 Z" 
+        fill="url(#goldAccent)" opacity="0.1"/>
+  <path d="M0,200 C300,150 600,250 900,200 C1200,150 1500,250 1800,200 L1920,200 L1920,0 L0,0 Z" 
+        fill="url(#goldAccent)" opacity="0.08"/>
+  
+  <!-- Islamic geometric patterns -->
+  <g opacity="0.07">
+    <!-- Repeating pattern across the footer -->
+    <g id="patternUnit">
+      <path d="M0,0 L50,50 L0,100 L-50,50 Z" fill="url(#patternGradient)" stroke="#ffffff" stroke-width="0.5" />
+      <path d="M50,50 L100,0 L150,50 L100,100 Z" fill="url(#patternGradient)" stroke="#ffffff" stroke-width="0.5" />
+      <path d="M0,100 L50,50 L100,100 L50,150 Z" fill="url(#patternGradient)" stroke="#ffffff" stroke-width="0.5" />
+      <path d="M-50,50 L0,0 L50,50 L0,100 Z" fill="url(#patternGradient)" stroke="#ffffff" stroke-width="0.5" />
+    </g>
+    
+    <!-- Repeat the pattern across the footer -->
+    <use href="#patternUnit" x="0" y="300" />
+    <use href="#patternUnit" x="100" y="300" />
+    <use href="#patternUnit" x="200" y="300" />
+    <use href="#patternUnit" x="300" y="300" />
+    <use href="#patternUnit" x="400" y="300" />
+    <use href="#patternUnit" x="500" y="300" />
+    <use href="#patternUnit" x="600" y="300" />
+    <use href="#patternUnit" x="700" y="300" />
+    <use href="#patternUnit" x="800" y="300" />
+    <use href="#patternUnit" x="900" y="300" />
+    <use href="#patternUnit" x="1000" y="300" />
+    <use href="#patternUnit" x="1100" y="300" />
+    <use href="#patternUnit" x="1200" y="300" />
+    <use href="#patternUnit" x="1300" y="300" />
+    <use href="#patternUnit" x="1400" y="300" />
+    <use href="#patternUnit" x="1500" y="300" />
+    <use href="#patternUnit" x="1600" y="300" />
+    <use href="#patternUnit" x="1700" y="300" />
+    <use href="#patternUnit" x="1800" y="300" />
+    
+    <!-- Second row -->
+    <use href="#patternUnit" x="0" y="400" />
+    <use href="#patternUnit" x="100" y="400" />
+    <use href="#patternUnit" x="200" y="400" />
+    <use href="#patternUnit" x="300" y="400" />
+    <use href="#patternUnit" x="400" y="400" />
+    <use href="#patternUnit" x="500" y="400" />
+    <use href="#patternUnit" x="600" y="400" />
+    <use href="#patternUnit" x="700" y="400" />
+    <use href="#patternUnit" x="800" y="400" />
+    <use href="#patternUnit" x="900" y="400" />
+    <use href="#patternUnit" x="1000" y="400" />
+    <use href="#patternUnit" x="1100" y="400" />
+    <use href="#patternUnit" x="1200" y="400" />
+    <use href="#patternUnit" x="1300" y="400" />
+    <use href="#patternUnit" x="1400" y="400" />
+    <use href="#patternUnit" x="1500" y="400" />
+    <use href="#patternUnit" x="1600" y="400" />
+    <use href="#patternUnit" x="1700" y="400" />
+    <use href="#patternUnit" x="1800" y="400" />
+    
+    <!-- Third row -->
+    <use href="#patternUnit" x="0" y="500" />
+    <use href="#patternUnit" x="100" y="500" />
+    <use href="#patternUnit" x="200" y="500" />
+    <use href="#patternUnit" x="300" y="500" />
+    <use href="#patternUnit" x="400" y="500" />
+    <use href="#patternUnit" x="500" y="500" />
+    <use href="#patternUnit" x="600" y="500" />
+    <use href="#patternUnit" x="700" y="500" />
+    <use href="#patternUnit" x="800" y="500" />
+    <use href="#patternUnit" x="900" y="500" />
+    <use href="#patternUnit" x="1000" y="500" />
+    <use href="#patternUnit" x="1100" y="500" />
+    <use href="#patternUnit" x="1200" y="500" />
+    <use href="#patternUnit" x="1300" y="500" />
+    <use href="#patternUnit" x="1400" y="500" />
+    <use href="#patternUnit" x="1500" y="500" />
+    <use href="#patternUnit" x="1600" y="500" />
+    <use href="#patternUnit" x="1700" y="500" />
+    <use href="#patternUnit" x="1800" y="500" />
+  </g>
+  
+  <!-- Decorative stars -->
+  <g opacity="0.2">
+    <!-- 8-pointed stars -->
+    <path d="M200,100 L220,120 L200,140 L180,120 Z" fill="url(#goldAccent)" />
+    <path d="M500,150 L520,170 L500,190 L480,170 Z" fill="url(#goldAccent)" />
+    <path d="M800,80 L820,100 L800,120 L780,100 Z" fill="url(#goldAccent)" />
+    <path d="M1100,130 L1120,150 L1100,170 L1080,150 Z" fill="url(#goldAccent)" />
+    <path d="M1400,90 L1420,110 L1400,130 L1380,110 Z" fill="url(#goldAccent)" />
+    <path d="M1700,140 L1720,160 L1700,180 L1680,160 Z" fill="url(#goldAccent)" />
+  </g>
+  
+  <!-- Subtle light dots -->
+  <g opacity="0.1">
+    <circle cx="150" cy="250" r="2" fill="#ffffff" />
+    <circle cx="350" cy="200" r="2" fill="#ffffff" />
+    <circle cx="550" cy="280" r="2" fill="#ffffff" />
+    <circle cx="750" cy="220" r="2" fill="#ffffff" />
+    <circle cx="950" cy="270" r="2" fill="#ffffff" />
+    <circle cx="1150" cy="230" r="2" fill="#ffffff" />
+    <circle cx="1350" cy="260" r="2" fill="#ffffff" />
+    <circle cx="1550" cy="210" r="2" fill="#ffffff" />
+    <circle cx="1750" cy="240" r="2" fill="#ffffff" />
+  </g>
+</svg>

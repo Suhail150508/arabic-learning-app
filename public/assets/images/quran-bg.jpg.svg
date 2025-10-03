@@ -1,0 +1,40 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d3557;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#457b9d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+  
+  <!-- Decorative pattern -->
+  <g fill="#ffffff" opacity="0.05">
+    <!-- Arabic-inspired geometric patterns -->
+    <path d="M0,0 L1200,0 L1200,800 L0,800 Z" fill="none" stroke="#ffffff" stroke-width="20" />
+    <path d="M100,100 L1100,100 L1100,700 L100,700 Z" fill="none" stroke="#ffffff" stroke-width="10" />
+    
+    <!-- Decorative elements -->
+    <circle cx="600" cy="400" r="300" fill="none" stroke="#ffffff" stroke-width="5" />
+    <circle cx="600" cy="400" r="250" fill="none" stroke="#ffffff" stroke-width="5" />
+    <circle cx="600" cy="400" r="200" fill="none" stroke="#ffffff" stroke-width="5" />
+    
+    <!-- Star pattern -->
+    <path d="M600,150 L620,200 L675,200 L630,230 L650,280 L600,250 L550,280 L570,230 L525,200 L580,200 Z" />
+    <path d="M600,520 L620,570 L675,570 L630,600 L650,650 L600,620 L550,650 L570,600 L525,570 L580,570 Z" />
+    <path d="M300,400 L320,450 L375,450 L330,480 L350,530 L300,500 L250,530 L270,480 L225,450 L280,450 Z" />
+    <path d="M900,400 L920,450 L975,450 L930,480 L950,530 L900,500 L850,530 L870,480 L825,450 L880,450 Z" />
+  </g>
+  
+  <!-- Quran book silhouette -->
+  <g transform="translate(450, 300)" fill="#ffffff" opacity="0.2">
+    <rect x="0" y="0" width="300" height="400" rx="20" ry="20" />
+    <rect x="150" y="0" width="10" height="400" />
+    <ellipse cx="150" cy="200" rx="150" ry="200" fill="none" stroke="#ffffff" stroke-width="5" />
+  </g>
+  
+  <!-- Arabic calligraphy suggestion -->
+  <text x="600" y="200" font-family="Arial" font-size="60" text-anchor="middle" fill="#ffffff" opacity="0.3">بسم الله الرحمن الرحيم</text>
+</svg>

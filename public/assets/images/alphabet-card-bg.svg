@@ -1,0 +1,67 @@
+<svg width="400" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="card-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8f9fa" />
+    </linearGradient>
+    
+    <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d3557" />
+      <stop offset="100%" stop-color="#457b9d" />
+    </linearGradient>
+    
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#f1c40f" />
+    </linearGradient>
+    
+    <pattern id="subtle-pattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M25,7.5 L42.5,25 L25,42.5 L7.5,25 Z" fill="none" stroke="#1d3557" stroke-width="0.5" opacity="0.03" />
+      <circle cx="25" cy="25" r="15" fill="none" stroke="#1d3557" stroke-width="0.5" opacity="0.03" />
+    </pattern>
+    
+    <filter id="soft-shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Card background -->
+  <rect width="400" height="500" rx="15" ry="15" fill="url(#card-gradient)" filter="url(#soft-shadow)" />
+  
+  <!-- Pattern overlay -->
+  <rect width="400" height="500" rx="15" ry="15" fill="url(#subtle-pattern)" />
+  
+  <!-- Top border accent -->
+  <rect width="400" height="4" fill="url(#accent-gradient)" />
+  
+  <!-- Decorative corner elements -->
+  <g opacity="0.1">
+    <!-- Top left corner -->
+    <path d="M0,0 C20,10 30,20 40,40" stroke="url(#gold-gradient)" stroke-width="2" fill="none" />
+    
+    <!-- Top right corner -->
+    <path d="M400,0 C380,10 370,20 360,40" stroke="url(#gold-gradient)" stroke-width="2" fill="none" />
+    
+    <!-- Bottom left corner -->
+    <path d="M0,500 C20,490 30,480 40,460" stroke="url(#gold-gradient)" stroke-width="2" fill="none" />
+    
+    <!-- Bottom right corner -->
+    <path d="M400,500 C380,490 370,480 360,460" stroke="url(#gold-gradient)" stroke-width="2" fill="none" />
+  </g>
+  
+  <!-- Subtle decorative elements for the card -->
+  <g opacity="0.05">
+    <circle cx="200" cy="250" r="150" fill="none" stroke="url(#accent-gradient)" stroke-width="1" />
+    <circle cx="200" cy="250" r="120" fill="none" stroke="url(#accent-gradient)" stroke-width="0.5" />
+    <path d="M200,130 L320,250 L200,370 L80,250 Z" fill="none" stroke="url(#accent-gradient)" stroke-width="0.5" />
+  </g>
+</svg>
